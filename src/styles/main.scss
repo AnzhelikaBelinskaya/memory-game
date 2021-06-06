@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500;800&display=swap');
+
+html {
+  font-size: 18px;
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-weight: 600;
+  @include mobile {
+    font-size: 12px;
+  }
+}

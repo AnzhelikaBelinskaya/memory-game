@@ -1,0 +1,26 @@
+@mixin flexrow($justify){
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+}
+
+@mixin flexcol($align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $align;
+}
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+$button: rgb(255, 229, 94);
+$button-active: rgb(224, 35, 54);
+$button-hover: rgb(252, 219, 57);
+$bg: rgba(255, 229, 94, 0.5);
+$shadow:  rgb(210, 208, 219);
+$select-hover: rgba(255, 229, 94, 0.3);
+$text-color: rgb(77, 136, 2);
+$border-color: rgb(77, 136, 2);
